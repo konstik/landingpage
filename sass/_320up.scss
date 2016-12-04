@@ -1,0 +1,130 @@
+
+$content_zweier : '.zweier';
+
+#{$content_zweier}{
+
+&__boxRechts{
+	display:none;
+
+}
+
+}
+///*******//
+
+
+$zweier : '.zweier';
+#{$zweier}{
+	width:100%;
+	padding-bottom:20px;
+	display:block;
+	float:left;
+
+
+&__boxLinks{
+	float:left;
+	width: 50%;
+
+}
+
+
+&__boxRechts{
+
+	float:left;
+	width:45%;
+    margin-top:-300px;
+}
+
+&__boxRechts-bild{
+    float:left;
+	width:100%;
+
+
+}
+
+ &__boxRechts-bild img{
+   width:100%;
+   margin-left:40%;
+ }
+
+}
+
+// dreier divs zweiter container
+
+$dreier : '.dreier';
+
+#{$dreier}{
+	padding-top:20px;
+	width:100%;
+	display:block;
+
+
+	h3{
+		font-size:1.0em;
+
+	}
+
+
+&__boxLinks{
+	margin-top:20px;
+	width:30%;
+	float:left;
+
+&-block{
+	float:left;
+	padding-bottom:100px;
+	
+    }
+
+}
+
+
+
+&__boxMitte{
+	margin-top:20px;
+	float:left;
+	width: 30%;
+
+	
+}
+
+&__boxMitte img{
+	
+	width: 100%;
+	float:left;
+	
+	
+
+}
+
+&__boxRechts{
+
+	float:left;
+
+
+&-block{
+	
+	float:left;
+	
+ 
+}
+
+}
+
+	}
+
+$einer :'.einer' ;
+#{$einer}{
+
+float:left;
+
+&__bild{
+
+
+	img{
+	float:left;
+     width:100%;
+
+		}
+	}	
+
+}

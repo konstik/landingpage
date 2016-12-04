@@ -1,0 +1,15 @@
+
+$clear: clear both!default;  
+
+ body{
+	margin:$margin;
+	backropund-color:$color;
+	font-family:$font; 
+	font-size:$fontSize;
+}
+
+
+.clear{
+	
+	clear:$cleaner;
+}

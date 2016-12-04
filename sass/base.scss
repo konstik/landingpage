@@ -1,0 +1,130 @@
+
+$clear :'.clear';
+#{$clear}{
+	
+	clear:both;
+}
+
+//wrapper
+$wrapper : '.wrapper';
+#{$wrapper}{
+
+	margin:0px;
+	padding:20px;	
+}
+
+	h1{
+		 font-size:4.0 rem;	
+	}
+
+	h2{
+   		font-size: 3.75rem;
+    	line-height: 4.688rem;
+
+	}
+
+
+// zweier divs erste container
+
+$zweier : '.zweier';
+#{$zweier}{
+	width:100%;
+	display:block;
+
+
+&__boxLinks{
+
+}
+
+
+&__boxRechts{
+
+	width:45%;
+  
+}
+
+&__boxRechts-bild{
+    
+	width:100%;
+	
+}
+
+ &__boxRechts-bild img{
+   width:100%;
+   
+ }
+
+}
+
+// dreier divs zweiter container
+
+$dreier : '.dreier';
+
+#{$dreier}{
+
+	width:100%;
+	display:block;
+
+
+	h3{
+		font-size:1.0em;
+
+	}
+
+
+&__boxLinks{
+
+	float:left;
+
+
+&-block{	
+	float:left;
+    }
+
+}
+
+&__boxMitte{
+
+	float:left;
+	
+}
+
+&__boxMitte img{
+	
+	width: 100%;
+	float:left;
+
+	
+
+}
+
+&__boxRechts{
+	
+	float:left;
+
+
+&-block{
+	
+	float:left;
+ 
+    }
+}
+
+	}
+
+$einer :'.einer' ;
+#{$einer}{
+
+
+
+&__bild{
+
+
+	img{
+     width:100%;
+
+		}
+	}	
+
+}
+
