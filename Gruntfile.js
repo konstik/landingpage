@@ -36,4 +36,5 @@ grunt.initConfig({
 
     // define default task
     grunt.registerTask('default', ['browserSync', 'watch']);
+    grunt.registerTask('project', ['browserSync', 'watch']);
 };

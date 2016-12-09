@@ -1,5 +1,5 @@
 
-$clear: clear both!default;  
+//$clear: clear both!default;  
 
  body{
 	margin:$margin;
@@ -8,8 +8,10 @@ $clear: clear both!default;
 	font-size:$fontSize;
 }
 
+%clear{
+	clear: both;
+}
 
-.clear{
-	
-	clear:$cleaner;
+%margin-10{
+	margin: 10px;
 }
