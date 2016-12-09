@@ -1,0 +1,252 @@
+
+
+
+$clear :'.clear';
+#{$clear}{
+	
+	clear:both;
+}
+
+@mixin headline {text-align:center;}
+
+
+$header :'.header';
+#{$header}{
+width: 95%;
+height: auto;
+position:fixed;
+background-color:#ccc;
+
+		&__higtline{
+		width: 100%;
+		border: 1px solid #999;
+
+
+			 h2{
+          //text-align:center;
+          @include headline;
+        		}
+
+
+	}
+
+        h1{
+     	//text-align:center;
+          @include headline;
+     	}
+
+
+		&__subline{
+		width: 100%;
+		
+        
+        
+	}
+
+}
+
+
+
+//wrapper
+$wrapper : '.wrapper';
+#{$wrapper}{
+
+	margin: 0 auto;
+	padding:220px;
+	
+}
+
+	h1{
+		 font-size:4.0 rem;	
+		  //text-align:center;
+		  
+		 
+  
+
+	}
+
+	h2{
+   		font-size: 3.75rem;
+    	line-height: 4.688rem;
+
+	}
+
+
+// zweier divs erste container
+
+$zweier : '.zweier';
+#{$zweier}{
+	width:100%;
+	padding-bottom:20px;
+	display:block;
+
+
+
+&__boxLinks{
+	float:left;
+	width: 50%;
+
+}
+
+
+&__boxRechts{
+
+	float:right;
+	width:45%;
+    margin-top:-310px;
+    
+}
+
+&__boxRechts-bild{
+    float:right;
+	width:100%;
+
+
+}
+
+ &__boxRechts-bild img{
+  float:left;
+   width:100%;
+   margin-left:0px;
+   display:block;
+ }
+
+
+
+}
+
+// dreier divs zweiter container
+
+$dreier : '.dreier';
+
+#{$dreier}{
+	
+	padding-top:80px;
+	width:100%;
+	display:block;
+
+
+	h3{
+		font-size:1.0em;
+        color:#00f;
+	}
+
+
+	&__boxLinks{
+		margin-top:20px;
+		width:30%;
+		float:left;
+
+	&-block{
+		
+		padding-bottom:100px;
+		
+	    }
+
+
+	p  {
+		
+		text-align:right;
+
+	  }
+
+  
+}
+
+
+
+&__boxMitte{
+	margin-top:20px;
+	float:left;
+	width: 30%;
+
+	
+}
+
+&__boxMitte img{
+	
+	width: 100%;
+	float:left;
+	padding-left:50px;
+	
+
+}
+
+&__boxRechts{
+	margin-top:20px;
+	width:30%;
+	float:right;
+
+
+	&-block{
+		
+		padding-bottom:100px;
+		
+	 
+	}
+
+}
+
+	}
+
+
+$einer :'.einer' ;
+#{$einer}{
+
+padding-top:20px;
+
+&__bild{
+
+
+	img{
+     width:100%;
+
+		}
+	}	
+
+}
+
+//footer 3 colum
+$footer : '.footer';
+
+#{$footer}{
+
+  width: 95%;
+  position:fixed;
+  bottom:0px;
+  background:#ccc;
+
+  &__col1{
+  	
+  	float:left;
+  	width:30%;
+  	padding-left: 20px;
+  	
+  	p{padding: 5px;}
+  	}
+  
+  &__col2{
+    
+    float:left;
+    width: 30%;
+    padding:10px;
+    margin-top:-10px;
+
+    p{padding: 5px;}
+    
+    }
+  
+  &__col3{
+    
+    float:left;
+    width: 30%;}
+    padding: 10px;
+
+    p{padding: 5px;}
+}
+
+
+
+ 
+
+

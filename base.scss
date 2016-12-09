@@ -1,0 +1,152 @@
+
+$clear :'.clear';
+#{$clear}{
+	
+	clear:both;
+}
+
+
+@mixin headline {text-align:center;}
+
+
+// header
+
+$header :'.hedaer';
+#{$header}{
+	background-position:fixed;
+	//top:20px;
+	//width:100%;
+	border:1px solid #999; 
+
+	&__hightline{
+      position:fixed;
+      border:1px solid #999;
+	}
+
+}
+
+//wrapper
+$wrapper : '.wrapper';
+#{$wrapper}{
+
+	margin-top:130px;
+	padding:20px;	
+}
+
+	h1{
+		 font-size:4.0 rem;
+		 @include headline;	
+	}
+
+	h2{
+   		font-size: 3.75rem;
+    	line-height: 4.688rem;
+    	@include headline;	
+
+	}
+
+
+// zweier divs erste container
+
+$zweier : '.zweier';
+#{$zweier}{
+	width:100%;
+	display:block;
+
+
+&__boxLinks{
+
+}
+
+
+&__boxRechts{
+
+	width:45%;
+  
+}
+
+&__boxRechts-bild{
+    
+	width:100%;
+	
+}
+
+ &__boxRechts-bild img{
+   width:100%;
+   
+ }
+
+}
+
+// dreier divs zweiter container
+
+$dreier : '.dreier';
+
+#{$dreier}{
+
+	width:100%;
+	display:block;
+
+
+	h3{
+		font-size:1.0em;
+
+	}
+
+
+&__boxLinks{
+
+	float:left;
+
+
+&-block{	
+	float:left;
+    }
+
+}
+
+&__boxMitte{
+
+	float:left;
+	
+}
+
+&__boxMitte img{
+	
+	width: 100%;
+	float:left;
+
+	
+
+}
+
+&__boxRechts{
+	
+	float:left;
+
+
+&-block{
+	
+	float:left;
+ 
+    }
+}
+
+	}
+
+$einer :'.einer' ;
+#{$einer}{
+
+
+
+&__bild{
+
+
+	img{
+     width:100%;
+
+		}
+	}	
+
+}
+
