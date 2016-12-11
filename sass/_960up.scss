@@ -7,31 +7,57 @@ $clear :'.clear';
 	clear:both;
 }
 
+
+
+
+
+$header :'.header';
+#{$header}{
+width: 95%;
+height: auto;
+position:fixed;
+background-color:#ccc;
+
+		&__higtline{
+		width: 100%;
+		border: 1px solid #999;
+
+
+			 h2{
+          text-align:center;
+          //@include headline;
+        		}
+
+
+	}
+
+        h1{
+     	text-align:center;
+          //@include headline;
+     	}
+
+
+		&__subline{
+		width: 100%;
+		
+        
+        
+	}
+
+}
+
+
+
 //wrapper
 $wrapper : '.wrapper';
 #{$wrapper}{
 
 	margin:0px;
-	padding:20px;
-	//padding-left:10%;
-	//padding-right:10%;
+	padding-top:180px;
+	
 	
 }
 
-	h1{
-		 font-size:4.0 rem;	
-		  text-align:center;
-		  
-		 
-  
-
-	}
-
-	h2{
-   		font-size: 3.75rem;
-    	line-height: 4.688rem;
-
-	}
 
 
 // zweier divs erste container
@@ -39,7 +65,7 @@ $wrapper : '.wrapper';
 $zweier : '.zweier';
 #{$zweier}{
 	width:100%;
-	padding-bottom:20px;
+	padding-bottom:40px;
 	display:block;
 
 
@@ -55,7 +81,7 @@ $zweier : '.zweier';
 
 	float:right;
 	width:45%;
-    margin-top:-310px;
+    margin-top:-230px;
     
 }
 
@@ -83,15 +109,9 @@ $dreier : '.dreier';
 
 #{$dreier}{
 	
-	padding-top:80px;
+	padding-top:120px;
 	width:100%;
 	display:block;
-
-
-	h3{
-		font-size:1.0em;
-        color:#00f;
-	}
 
 
 &__boxLinks{
@@ -172,6 +192,44 @@ padding-top:20px;
 }
 
 
+//footer 3 colum
+$footer : '.footer';
+
+#{$footer}{
+
+  width: 95%;
+  position:fixed;
+  bottom:0px;
+  background:#ccc;
+
+  &__col1{
+  	
+  	float:left;
+  	width:30%;
+  	padding-left: 20px;
+  	
+  	p{padding: 5px;}
+  	}
+  
+  &__col2{
+    
+    float:left;
+    width: 30%;
+    padding:10px;
+    margin-top:-10px;
+
+    p{padding: 5px;}
+    
+    }
+  
+  &__col3{
+    
+    float:left;
+    width: 30%;}
+    padding: 10px;
+
+    p{padding: 5px;}
+}
 
  
 

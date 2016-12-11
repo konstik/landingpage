@@ -4,8 +4,6 @@
  body{
 	margin:$margin;
 	backropund-color:$color;
-	font-family:$font; 
-	font-size:$fontSize;
 }
 
 %clear{
@@ -14,4 +12,36 @@
 
 %margin-10{
 	margin: 10px;
+}
+
+%font {
+	
+	font-family:'Lane', sans-serif, Serif;
+}
+
+
+%font-size {
+	font-size:18px;
+
+}
+
+%font-headline{
+	font-size:4.0 rem;	
+	
+}
+
+%font-subline{
+	font-size: 3.75rem;
+    line-height: 4.688rem;	
+
+}
+
+%fontcolor{
+	
+	color:#00f;
+}
+
+%textAlign{
+	
+	text-align: right;
 }

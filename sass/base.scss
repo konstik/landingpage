@@ -1,13 +1,21 @@
 @import '_variables';
-@import '_helpers';
+@import '_helper';
 @import '_mixin';
+
 *{
 	margin: 0;
 	padding: 0;
 }
+
 $clear :'.clear';
 #{$clear}{
 	@extend %clear;
+}
+
+p{
+	
+	@extend %font;
+	@extend %font-size;
 }
 
 //wrapper
@@ -21,13 +29,16 @@ $wrapper : '.wrapper';
 }
 
 	h1{
-		 font-size:4.0 rem;	
+		 
+		 @extend %font;
+		 @extend %font-headline;
+		 @extend %textAlign;
 	}
 
 	h2{
-   		font-size: 3.75rem;
-    	line-height: 4.688rem;
-
+   		
+        @extend %font;
+        @extend %font-subline;
 	}
 
 
@@ -72,9 +83,14 @@ $dreier : '.dreier';
 	width:100%;
 	display:block;
 
+p{
+	
+	@axtend: %textAlign;
+}
 
 	h3{
-		font-size:1.0em;
+		font-size:1.8em;
+		@extend %fontcolor;
 
 	}
 
