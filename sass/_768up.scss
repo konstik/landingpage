@@ -5,6 +5,44 @@ $clear :'.clear';
 	clear:both;
 }
 
+$header :'.header';
+#{$header}{
+width: 100%;
+height: auto;
+position:fixed;
+background-color:#ccc;
+
+		&__higtline{
+		width: 100%;
+		
+
+
+			 h2{
+          text-align:center;
+          //@include headline;
+        		}
+
+
+	}
+
+		        h1{
+		     	text-align:center;
+		          //@include headline;
+		     	}
+
+
+				&__subline{
+				width: 100%;
+				
+		        
+		        
+			}
+
+}
+
+
+
+
 //wrapper
 $wrapper : '.wrapper';
 #{$wrapper}{
@@ -12,6 +50,11 @@ $wrapper : '.wrapper';
 	margin:0px;
 	padding:20px;
 	
+	h1 {
+
+		margin-top: 120px;
+
+	}
 }
 
 
@@ -22,6 +65,7 @@ $zweier : '.zweier';
 	width:100%;
 	padding-bottom:20px;
 	display:block;
+	padding-top:220px;
 
 
 &__boxLinks{
@@ -94,7 +138,7 @@ $dreier : '.dreier';
 	
 	width: 100%;
 	float:left;
-	padding-left:50px;
+	//padding-left:50px;
 	
 
 }
@@ -130,7 +174,6 @@ padding-top:20px;
 	}	
 
 }
-
 
 
  

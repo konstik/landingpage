@@ -1,6 +1,12 @@
+
+//das ist der grundgerüst, also von kleinenansicht immer anfangen
+
 @import '_variables';
 @import '_helper';
 @import '_mixin';
+@import '_960up';
+@import '_768up';
+@import '_320up';
 
 *{
 	margin: 0;
@@ -33,12 +39,14 @@ $wrapper : '.wrapper';
 		 @extend %font;
 		 @extend %font-headline;
 		 @extend %textAlign;
+		 text-align:center;
 	}
 
 	h2{
    		
         @extend %font;
         @extend %font-subline;
+        @extend %textAlign;
 	}
 
 
@@ -83,10 +91,19 @@ $dreier : '.dreier';
 	width:100%;
 	display:block;
 
-p{
+	h1 {
+		 @extend %font;
+		 @extend %font-headline;
+		 @extend %textAlign;
+		 text-align:center;
+
+	}
+
+    p {
 	
-	@axtend: %textAlign;
-}
+	
+	text-align: center;
+      }
 
 	h3{
 		font-size:1.8em;
@@ -131,6 +148,11 @@ p{
 		float:left;
 	 
     }
+
+    p{
+    text-align:left;
+    }
+
 }
 
 	}
@@ -150,4 +172,52 @@ $einer :'.einer' ;
 	}	
 
 }
+
+$footer : '.footer';
+
+#{$footer}{
+
+  width: 100%;
+  background:#ccc;
+  
+  &__container{
+  	padding:20px;
+  	margin: 0 auto;
+  }
+
+  &__col1{
+  	
+  	float:left;
+  	width:30%;
+  	padding-left: 20px;
+  	
+	  	}
+  
+  &__col2{
+    
+    float:left;
+    width: 30%;
+    padding:10px;
+    margin-top:-10px;
+
+	    p {
+	    	padding: 5px;
+	    }
+    
+    }
+  
+  &__col3{
+    
+    float:left;
+    width: 30%;
+    padding: 10px;
+
+	    p {
+	    	padding: 5px;
+	    }
+ }
+}
+
+
+
 
