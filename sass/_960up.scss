@@ -7,44 +7,7 @@ $clear :'.clear';
 	clear:both;
 }
 
-$header :'.header';
-#{$header}{
-width: 100%;
-height: auto;
-position:fixed;
-background-color:#ccc;
 
-	&__container{
-		max-width:1030px;
-		margin:0px auto;
-
-	}	
-
-		&__higtline{
-		width: 100%;
-	
-			 h2{
-          text-align:center;
-          //@include headline;
-        		}
-
-
-	}
-
-		        h1{
-		     	text-align:center;
-		          //@include headline;
-		     	}
-
-
-				&__subline{
-				width: 100%;
-				
-		        
-		        
-			}
-
-}
 
 
 
@@ -53,12 +16,67 @@ $wrapper : '.wrapper';
 #{$wrapper}{
 
 	margin:0px;
-	padding-top:180px;
 	
 	
+	
+
+
+
+///header
+
+
+$header :'.header';
+#{$header}{
+position:fixed;
+background-color:#ccc;
+height:auto;
+padding-bottom:60px;
+margin-left:-3px;
+max-width:986px;
+
+	&__container{
+		//max-width:1030px;
+		//margin-left:-40px;
+		
+	}		
+
+		&__higtline{
+		
+		text-align:center;
+		margin:0px auto;
+	
+			 h2{
+        
+          //@include headline;
+        		}
+
+
+	}
+
+
+				&__subline{
+					width: 100%;
+		        
+			}
+				h2{
+
+					text-align:center;
+					font-size:16px;
+					padding-bottom:10px;
+				}
+
 }
 
+//ende 
 
+}
+
+	h1{
+		 
+		
+
+
+//ende header
 
 // zweier divs erste container
 
@@ -198,6 +216,6 @@ $footer : '.footer';
 	}
 }
 
- 
+ }
 
 

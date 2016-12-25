@@ -1,12 +1,12 @@
 
-//das ist der grundgerüst, also von kleinenansicht immer anfangen
+//das ist der grundgerüst, also von kleinenansicht immer anfangen widr Responsive
 
 @import '_variables';
 @import '_helper';
 @import '_mixin';
 @import '_960up';
-@import '_768up';
-@import '_320up';
+//@import '_768up';
+//@import '_320up';
 
 *{
 	margin: 0;
@@ -18,35 +18,84 @@ $clear :'.clear';
 	@extend %clear;
 }
 
-p{
+*p{
 	
-	@extend %font;
-	@extend %font-size;
+	//@extend %font;
+	//@extend %font-size;
+    font-size:12px;
 }
 
-//wrapper
+//wrapper umgebungkontainer
 $wrapper : '.wrapper';
 #{$wrapper}{
 
-	margin:0px;
-	padding:20px;
+	margin:0px auto;
 	@include padding(2px, 2px, 2px, 2px);	// code climete -> valid
-	@extend %margin-10;
+
+//header
+
+$header :'.header';
+#{$header}{
+width: 100%;
+position:fixed;
+background-color:#ccc;
+height:auto;
+padding-bottom:20px;
+margin-left:-3px;
+
+	&__container{
+		//max-width:1030px;
+		margin:0px auto;
+
+	}	
+
+		&__higtline{
+		width: 100%;
+		text-align:center;
+		margin:0px auto;
+	
+			 h2{
+        
+          //@include headline;
+        		}
+
+
+	}
+
+
+				&__subline{
+					width: 100%;
+		        
+			}
+				h2{
+
+					text-align:center;
+					font-size:16px;
+					padding-bottom:10px;
+				}
+
+}
+
+//ende 
+
 }
 
 	h1{
 		 
 		 @extend %font;
-		 @extend %font-headline;
-		 @extend %textAlign;
+		 //@extend %font-headline;
+		 //@extend %textAlign;
+		 font-size: 16px;
 		 text-align:center;
 	}
 
 	h2{
    		
         @extend %font;
-        @extend %font-subline;
-        @extend %textAlign;
+        //@extend %font-subline;
+        //@extend %textAlign;
+		text-align:center;
+		font-size:16px;
 	}
 
 
@@ -55,27 +104,35 @@ $wrapper : '.wrapper';
 $zweier : '.zweier';
 #{$zweier}{
 	width:100%;
-	display:block;
+	padding-top:80px;
 
+ 	h1{
+ 		font-size:14px;
+
+ 	}
 
 &__boxLinks{
-
+	float:left;
+	width:35%;
+	padding-top:5px;
 }
 
 
 &__boxRechts{
-
-	width:45%;
+	float:right;
+	width:40%;
+	margin-top:-130px;
   
 }
 
 &__boxRechts-bild{
-    
+    float:right;
 	width:100%;
 	
 }
 
  &__boxRechts-bild img{
+ 	float:right;
    width:100%;
    
  }
@@ -94,20 +151,20 @@ $dreier : '.dreier';
 	h1 {
 		 @extend %font;
 		 @extend %font-headline;
-		 @extend %textAlign;
 		 text-align:center;
+		 padding:10px;
 
 	}
 
     p {
 	
-	
-	text-align: center;
       }
 
 	h3{
-		font-size:1.8em;
+		margin:0px auto;
 		@extend %fontcolor;
+		font-size:16px;
+		//text-align:left;
 
 	}
 
@@ -115,10 +172,12 @@ $dreier : '.dreier';
 &__boxLinks{
 
 	float:left;
+	margin-bottom: 20px;
 
 
 &-block{	
 	float:left;
+	margin-bottom: 20px;
     }
 
 }
@@ -131,8 +190,9 @@ $dreier : '.dreier';
 
 &__boxMitte img{
 	
-	width: 100%;
+	width:75%;
 	float:left;
+	padding-bottom: 20px;
 
 	
 
@@ -166,7 +226,7 @@ $einer :'.einer' ;
 
 
 	img{
-     width:100%;
+     width: 75%;
 
 		}
 	}	
@@ -179,26 +239,18 @@ $footer : '.footer';
 
   width: 100%;
   background:#ccc;
-  
-  &__container{
-  	padding:20px;
-  	margin: 0 auto;
-  }
+  margin: 0px auto;
+  font-size: 12px;
+
 
   &__col1{
   	
-  	float:left;
-  	width:30%;
-  	padding-left: 20px;
+    paddin-buttom: 10px;
   	
 	  	}
   
   &__col2{
-    
-    float:left;
-    width: 30%;
-    padding:10px;
-    margin-top:-10px;
+  
 
 	    p {
 	    	padding: 5px;
@@ -207,10 +259,6 @@ $footer : '.footer';
     }
   
   &__col3{
-    
-    float:left;
-    width: 30%;
-    padding: 10px;
 
 	    p {
 	    	padding: 5px;
