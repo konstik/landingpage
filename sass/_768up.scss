@@ -11,6 +11,8 @@ width: 100%;
 height: auto;
 position:fixed;
 background-color:#ccc;
+max-width:750px;
+margin-left:-155px;
 
 		&__higtline{
 		width: 100%;
@@ -65,7 +67,7 @@ $zweier : '.zweier';
 	width:100%;
 	padding-bottom:20px;
 	display:block;
-	//padding-top:220px;
+	padding-top:220px;
 
 
 &__boxLinks{

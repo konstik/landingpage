@@ -8,6 +8,29 @@ $clear :'.clear';
 }
 
 
+.h1{
+		 font-size:3.0rem;
+		 text-align:center;	
+}
+
+.h2{
+   		font-size: 2.75rem;
+    	line-height: 1.688rem;
+    	text-align:center;
+
+	}
+
+.h3{
+		font-size:1.0em;
+        color:#00f;
+       
+	}	
+
+
+.p{
+	font-size:18px;
+	padding-left:10px;
+}
 
 
 
@@ -15,76 +38,61 @@ $clear :'.clear';
 $wrapper : '.wrapper';
 #{$wrapper}{
 
-	margin:0px;
+	margin:0px auto;
 	
-	
-	
-
-
-
-///header
-
-
-$header :'.header';
+$header : '.header';
 #{$header}{
-position:fixed;
-background-color:#ccc;
-height:auto;
-padding-bottom:60px;
-margin-left:-3px;
-max-width:986px;
+	width: 98%;
+	background-color:#ccc;
+	margin-top:-250px;
+
 
 	&__container{
-		//max-width:1030px;
-		//margin-left:-40px;
-		
-	}		
-
-		&__higtline{
-		
-		text-align:center;
-		margin:0px auto;
+	width:98%;
+	position:fixed;
+	display:block;
+	margin-top:-120px;
+	background-color:#ccc;
 	
-			 h2{
-        
-          //@include headline;
-        		}
 
+		&__higtline{padding:10px;}
+		&__subline{padding-bottom:50px;}
+	}
 
 	}
 
 
-				&__subline{
-					width: 100%;
-		        
-			}
-				h2{
 
-					text-align:center;
-					font-size:16px;
-					padding-bottom:10px;
-				}
 
-}
-
-//ende 
-
+	
+	
 }
 
 	h1{
+		 //font-size:4.0 rem;	
+		  //text-align:center;
+		  @extend.h1;
+		  
 		 
-		
+  
+
+	}
+
+	h2{
+   		//font-size: 3.75rem;
+    	//line-height: 4.688rem;
+    	@extend.h2;
+	}
 
 
-//ende header
 
 // zweier divs erste container
 
 $zweier : '.zweier';
 #{$zweier}{
 	width:100%;
-	padding-bottom:40px;
 	display:block;
+	margin-top:400px;
 
 
 
@@ -99,23 +107,26 @@ $zweier : '.zweier';
 
 	float:right;
 	width:45%;
-    margin-top:-230px;
+    margin-top:-150px;
     
 }
 
-	&__boxRechts-bild{
-	    float:right;
-		width:100%;
+&__boxRechts-bild{
+    float:right;
+	width:100%;
 
 
-	}
+}
 
-		 &__boxRechts-bild img{
-		  float:left;
-		   width:100%;
-		   margin-left:0px;
-		   display:block;
-		 }
+ &__boxRechts-bild img{
+  float:left;
+   width:100%;
+   margin-left:300px;
+   display:block;
+ }
+
+
+
 }
 
 // dreier divs zweiter container
@@ -124,35 +135,36 @@ $dreier : '.dreier';
 
 #{$dreier}{
 	
-	padding-top:120px;
+	//padding-top:80px;
 	width:100%;
 	display:block;
 
 
-	h1 {
-		 //@extend %font;
-		 //@extend %font-headline;
-		 text-align:center;
-
+	h3{
+		//font-size:1.0em;
+        //color:#00f;
+        @extend .h3;
 	}
+
 
 &__boxLinks{
 	margin-top:20px;
 	width:30%;
 	float:left;
 
-	&-block{
-		
-		padding-bottom:100px;
-		
-	    }
+&-block{
+	
+	padding-bottom:100px;
+	
+    }
 
 
-		p  {
-			
-			text-align:right;
+p  {
+	
+	text-align:right;
 
-		  }
+  }
+
   
 }
 
@@ -166,14 +178,14 @@ $dreier : '.dreier';
 	
 }
 
-	&__boxMitte img{
-		
-		width: 100%;
-		float:left;
-		padding-left:50px;
-		
+&__boxMitte img{
+	
+	width: 100%;
+	float:left;
+	padding-left:50px;
+	
 
-	}
+}
 
 &__boxRechts{
 	margin-top:20px;
@@ -181,16 +193,23 @@ $dreier : '.dreier';
 	float:right;
 
 
-	&-block{
-		
-		padding-bottom:100px;	 
-	   }
-
-   }
+&-block{
+	
+	padding-bottom:100px;
+	
+ 
 }
+
+}
+
+
+
+	}
 
 $einer :'.einer' ;
 #{$einer}{
+
+//width:100%;
 
 padding-top:20px;
 
@@ -205,17 +224,54 @@ padding-top:20px;
 
 }
 
-
-//footer 3 colum
-$footer : '.footer';
-
+$footer: '.footer';
 #{$footer}{
 
-	&__container{
-		max-width: 1030px;
-	}
-}
+	width: 100%;
+	background-color:#ccc;
+	font-size: 12px;
+	border: 1px solid #999;
+	height: auto;
 
- }
+		&__col1{
+			width:33%;
+			float:left;
+			background-color:#ccc;
+			font-size:12px;
+
+			p{
+				@extend .p;
+			}
+			
+		}
+		&__col2{
+			float:left;
+			width:33%;
+			background-color:#ccc;
+
+			p{
+				
+				@extend .p;
+			}
+			
+		}
+
+		&__col3{
+			float:left;
+			width: 33%;
+			background-color: #ccc;
+			
+			p{
+				
+				@extend .p;
+			}
+
+		}
+	
+	}
+
+
+
+ 
 
 

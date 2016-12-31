@@ -1,329 +1,136 @@
-body {
-  margin: margin 0px;
-  backropund-color: background #fffff; }
-
 .clear {
   clear: both; }
 
-h1, h2, .dreier h1 {
-  font-family: 'Lane', 'sans-serif', 'Serif'; }
+h1 {
+  font-size: 1.0rem;
+  text-align: center; }
 
-.dreier h1 {
-  font-size: 4.0 rem; }
+h2 {
+  font-size: 1.75rem;
+  line-height: 1.688rem;
+  text-align: center; }
 
-.dreier h3 {
-  color: #00f; }
-
-.clear {
-  clear: both; }
+h3 {
+  font-size: 1.0em; }
 
 .wrapper {
   margin: 0px; }
   .wrapper .header {
-    position: fixed;
+    width: 94%;
     background-color: #ccc;
-    height: auto;
-    padding-bottom: 60px;
-    margin-left: -3px;
-    max-width: 986px; }
-    .wrapper .header__higtline {
-      text-align: center;
-      margin: 0px auto; }
-    .wrapper .header__subline {
-      width: 100%; }
-    .wrapper .header h2 {
-      text-align: center;
-      font-size: 16px;
-      padding-bottom: 10px; }
-
-h1 .zweier {
-  width: 100%;
-  padding-bottom: 40px;
-  display: block; }
-  h1 .zweier__boxLinks {
-    float: left;
-    width: 50%; }
-  h1 .zweier__boxRechts {
-    float: right;
-    width: 45%;
-    margin-top: -230px; }
-  h1 .zweier__boxRechts-bild {
-    float: right;
-    width: 100%; }
-  h1 .zweier__boxRechts-bild img {
-    float: left;
-    width: 100%;
-    margin-left: 0px;
-    display: block; }
-
-h1 .dreier {
-  padding-top: 120px;
-  width: 100%;
-  display: block; }
-  h1 .dreier h1 {
-    text-align: center; }
-  h1 .dreier__boxLinks {
-    margin-top: 20px;
-    width: 30%;
-    float: left; }
-    h1 .dreier__boxLinks-block {
-      padding-bottom: 100px; }
-    h1 .dreier__boxLinks p {
-      text-align: right; }
-  h1 .dreier__boxMitte {
-    margin-top: 20px;
-    float: left;
-    width: 30%; }
-  h1 .dreier__boxMitte img {
-    width: 100%;
-    float: left;
-    padding-left: 50px; }
-  h1 .dreier__boxRechts {
-    margin-top: 20px;
-    width: 30%;
-    float: right; }
-    h1 .dreier__boxRechts-block {
-      padding-bottom: 100px; }
-
-h1 .einer {
-  padding-top: 20px; }
-  h1 .einer__bild img {
-    width: 100%; }
-
-h1 .footer__container {
-  max-width: 1030px; }
-
-* {
-  margin: 0;
-  padding: 0; }
-
-*p {
-  font-size: 12px; }
-
-.wrapper {
-  margin: 0px auto;
-  padding: 2px 2px 2px 2px; }
-  .wrapper .header {
-    width: 100%;
     position: fixed;
-    background-color: #ccc;
-    height: auto;
-    padding-bottom: 20px;
-    margin-left: -3px; }
-    .wrapper .header__container {
-      margin: 0px auto; }
-    .wrapper .header__higtline {
-      width: 100%;
-      text-align: center;
-      margin: 0px auto; }
-    .wrapper .header__subline {
-      width: 100%; }
-    .wrapper .header h2 {
-      text-align: center;
-      font-size: 16px;
-      padding-bottom: 10px; }
-
-h1 {
-  font-size: 16px;
-  text-align: center; }
-
-h2 {
-  text-align: center;
-  font-size: 16px; }
+    display: block;
+    margin-top: -100px; }
 
 .zweier {
   width: 100%;
-  padding-top: 80px; }
-  .zweier h1 {
-    font-size: 14px; }
-  .zweier__boxLinks {
-    float: left;
-    width: 35%;
-    padding-top: 5px; }
+  display: block;
+  margin-top: 120px; }
   .zweier__boxRechts {
-    float: right;
-    width: 40%;
-    margin-top: -130px; }
+    width: 45%; }
   .zweier__boxRechts-bild {
-    float: right;
     width: 100%; }
   .zweier__boxRechts-bild img {
-    float: right;
     width: 100%; }
 
 .dreier {
   width: 100%;
   display: block; }
-  .dreier h1 {
-    text-align: center;
-    padding: 10px; }
-  .dreier h3 {
-    margin: 0px auto;
-    font-size: 16px; }
   .dreier__boxLinks {
-    float: left;
-    margin-bottom: 20px; }
+    float: left; }
     .dreier__boxLinks-block {
-      float: left;
-      margin-bottom: 20px; }
+      float: left; }
   .dreier__boxMitte {
     float: left; }
   .dreier__boxMitte img {
-    width: 75%;
-    float: left;
-    padding-bottom: 20px; }
+    width: 100%;
+    float: left; }
   .dreier__boxRechts {
     float: left; }
     .dreier__boxRechts-block {
       float: left; }
-    .dreier__boxRechts p {
-      text-align: left; }
 
 .einer__bild img {
-  width: 75%; }
+  width: 100%; }
 
 .footer {
   width: 100%;
-  background: #ccc;
-  margin: 0px auto;
-  font-size: 12px; }
+  background-color: #ccc;
+  font-size: 22px;
+  border-top: 1px solid #999;
+  height: auto; }
   .footer__col1 {
-    paddin-buttom: 10px; }
-  .footer__col2 p {
-    padding: 5px; }
-  .footer__col3 p {
-    padding: 5px; }
+    background-color: #ccc; }
+    .footer__col1 p {
+      font-size: 7px;
+      padding-left: 10px; }
+  .footer__col2 {
+    background-color: #ccc; }
+    .footer__col2 p {
+      font-size: 7px;
+      padding-left: 7px; }
+  .footer__col3 {
+    background-color: #ccc; }
+    .footer__col3 p {
+      font-size: 7px;
+      padding-left: 7px; }
 
 body {
   margin: margin 0px;
   backropund-color: background #fffff; }
 
-.clear {
-  clear: both; }
-
-h1, h2, .dreier h1 {
-  font-family: 'Lane', 'sans-serif', 'Serif'; }
-
-.dreier h1 {
-  font-size: 4.0 rem; }
-
-.dreier h3 {
-  color: #00f; }
-
 @media only screen and (min-width: 960px) {
   .clear {
     clear: both; }
+  .h1, h1 {
+    font-size: 3.0rem;
+    text-align: center; }
+  .h2, h2 {
+    font-size: 2.75rem;
+    line-height: 1.688rem;
+    text-align: center; }
+  .h3, .dreier h3 {
+    font-size: 1.0em;
+    color: #00f; }
+  .p, .footer__col1 p, .footer__col2 p, .footer__col3 p {
+    font-size: 18px;
+    padding-left: 10px; }
   .wrapper {
-    margin: 0px; }
+    margin: 0px auto; }
     .wrapper .header {
-      position: fixed;
+      width: 98%;
       background-color: #ccc;
-      height: auto;
-      padding-bottom: 60px;
-      margin-left: -3px;
-      max-width: 986px; }
-      .wrapper .header__higtline {
-        text-align: center;
-        margin: 0px auto; }
-      .wrapper .header__subline {
-        width: 100%; }
-      .wrapper .header h2 {
-        text-align: center;
-        font-size: 16px;
-        padding-bottom: 10px; }
-  h1 .zweier {
-    width: 100%;
-    padding-bottom: 40px;
-    display: block; }
-    h1 .zweier__boxLinks {
-      float: left;
-      width: 50%; }
-    h1 .zweier__boxRechts {
-      float: right;
-      width: 45%;
-      margin-top: -230px; }
-    h1 .zweier__boxRechts-bild {
-      float: right;
-      width: 100%; }
-    h1 .zweier__boxRechts-bild img {
-      float: left;
-      width: 100%;
-      margin-left: 0px;
-      display: block; }
-  h1 .dreier {
-    padding-top: 120px;
-    width: 100%;
-    display: block; }
-    h1 .dreier h1 {
-      text-align: center; }
-    h1 .dreier__boxLinks {
-      margin-top: 20px;
-      width: 30%;
-      float: left; }
-      h1 .dreier__boxLinks-block {
-        padding-bottom: 100px; }
-      h1 .dreier__boxLinks p {
-        text-align: right; }
-    h1 .dreier__boxMitte {
-      margin-top: 20px;
-      float: left;
-      width: 30%; }
-    h1 .dreier__boxMitte img {
-      width: 100%;
-      float: left;
-      padding-left: 50px; }
-    h1 .dreier__boxRechts {
-      margin-top: 20px;
-      width: 30%;
-      float: right; }
-      h1 .dreier__boxRechts-block {
-        padding-bottom: 100px; }
-  h1 .einer {
-    padding-top: 20px; }
-    h1 .einer__bild img {
-      width: 100%; }
-  h1 .footer__container {
-    max-width: 1030px; } }
-
-@media only screen and (min-width: 768px) {
-  .clear {
-    clear: both; }
-  .header {
-    width: 100%;
-    height: auto;
-    position: fixed;
-    background-color: #ccc; }
-    .header__higtline {
-      width: 100%; }
-      .header__higtline h2 {
-        text-align: center; }
-    .header h1 {
-      text-align: center; }
-    .header__subline {
-      width: 100%; }
-  .wrapper {
-    margin: 0px;
-    padding: 20px; }
+      margin-top: -250px; }
+      .wrapper .header__container {
+        width: 98%;
+        position: fixed;
+        display: block;
+        margin-top: -120px;
+        background-color: #ccc; }
+        .wrapper .header__container__higtline {
+          padding: 10px; }
+        .wrapper .header__container__subline {
+          padding-bottom: 50px; }
   .zweier {
     width: 100%;
-    padding-bottom: 20px;
-    display: block; }
+    display: block;
+    margin-top: 400px; }
     .zweier__boxLinks {
       float: left;
       width: 50%; }
     .zweier__boxRechts {
       float: right;
-      width: 45%; }
+      width: 45%;
+      margin-top: -150px; }
     .zweier__boxRechts-bild {
       float: right;
       width: 100%; }
     .zweier__boxRechts-bild img {
       float: left;
       width: 100%;
-      margin-left: 0px;
+      margin-left: 300px;
       display: block; }
   .dreier {
-    padding-top: 20px;
     width: 100%;
     display: block; }
     .dreier__boxLinks {
@@ -332,13 +139,16 @@ h1, h2, .dreier h1 {
       float: left; }
       .dreier__boxLinks-block {
         padding-bottom: 100px; }
+      .dreier__boxLinks p {
+        text-align: right; }
     .dreier__boxMitte {
       margin-top: 20px;
       float: left;
       width: 30%; }
     .dreier__boxMitte img {
       width: 100%;
-      float: left; }
+      float: left;
+      padding-left: 50px; }
     .dreier__boxRechts {
       margin-top: 20px;
       width: 30%;
@@ -348,4 +158,23 @@ h1, h2, .dreier h1 {
   .einer {
     padding-top: 20px; }
     .einer__bild img {
-      width: 100%; } }
+      width: 100%; }
+  .footer {
+    width: 100%;
+    background-color: #ccc;
+    font-size: 12px;
+    border: 1px solid #999;
+    height: auto; }
+    .footer__col1 {
+      width: 33%;
+      float: left;
+      background-color: #ccc;
+      font-size: 12px; }
+    .footer__col2 {
+      float: left;
+      width: 33%;
+      background-color: #ccc; }
+    .footer__col3 {
+      float: left;
+      width: 33%;
+      background-color: #ccc; } }

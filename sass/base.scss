@@ -1,101 +1,54 @@
 
-//das ist der grundgerüst, also von kleinenansicht immer anfangen widr Responsive
-
-@import '_variables';
-@import '_helper';
-@import '_mixin';
-@import '_960up';
-//@import '_768up';
-//@import '_320up';
-
-*{
-	margin: 0;
-	padding: 0;
-}
-
 $clear :'.clear';
 #{$clear}{
-	@extend %clear;
+	
+	clear:both;
 }
 
-*p{
-	
-	//@extend %font;
-	//@extend %font-size;
-    font-size:12px;
+h1{
+		 font-size:1.0rem;
+		 text-align:center;	
 }
 
-//wrapper umgebungkontainer
-$wrapper : '.wrapper';
-#{$wrapper}{
+h2{
+   		font-size: 1.75rem;
+    	line-height: 1.688rem;
+    	text-align:center;
 
-	margin:0px auto;
-	@include padding(2px, 2px, 2px, 2px);	// code climete -> valid
-
-//header
-
-$header :'.header';
-#{$header}{
-width: 100%;
-position:fixed;
-background-color:#ccc;
-height:auto;
-padding-bottom:20px;
-margin-left:-3px;
-
-	&__container{
-		//max-width:1030px;
-		margin:0px auto;
-
-	}	
-
-		&__higtline{
-		width: 100%;
-		text-align:center;
-		margin:0px auto;
-	
-			 h2{
-        
-          //@include headline;
-        		}
-
-
+	}
+h3 {
+		font-size:1.0em;
 	}
 
 
-				&__subline{
-					width: 100%;
-		        
-			}
-				h2{
+//wrapper
+$wrapper : '.wrapper';
+#{$wrapper}{
+	margin: 0px;
+	//padding: 120px;
 
-					text-align:center;
-					font-size:16px;
-					padding-bottom:10px;
-				}
 
-}
 
-//ende 
 
+$header : '.header';
+#{$header}{
+	width: 94%;
+	background-color:#ccc;
+	position:fixed;
+	display: block;
+	margin-top:-100px;
+
+
+	}
 }
 
 	h1{
-		 
-		 @extend %font;
-		 //@extend %font-headline;
-		 //@extend %textAlign;
-		 font-size: 16px;
-		 text-align:center;
+		 //@extend.h1;	
 	}
 
 	h2{
-   		
-        @extend %font;
-        //@extend %font-subline;
-        //@extend %textAlign;
-		text-align:center;
-		font-size:16px;
+   		//@extend.h2;
+
 	}
 
 
@@ -104,35 +57,28 @@ margin-left:-3px;
 $zweier : '.zweier';
 #{$zweier}{
 	width:100%;
-	padding-top:80px;
+	display:block;
+	margin-top: 120px;
 
- 	h1{
- 		font-size:14px;
-
- 	}
 
 &__boxLinks{
-	float:left;
-	width:35%;
-	padding-top:5px;
+
 }
 
 
 &__boxRechts{
-	float:right;
-	width:40%;
-	margin-top:-130px;
+
+	width:45%;
   
 }
 
 &__boxRechts-bild{
-    float:right;
+    
 	width:100%;
 	
 }
 
  &__boxRechts-bild img{
- 	float:right;
    width:100%;
    
  }
@@ -148,23 +94,9 @@ $dreier : '.dreier';
 	width:100%;
 	display:block;
 
-	h1 {
-		 @extend %font;
-		 @extend %font-headline;
-		 text-align:center;
-		 padding:10px;
-
-	}
-
-    p {
-	
-      }
 
 	h3{
-		margin:0px auto;
-		@extend %fontcolor;
-		font-size:16px;
-		//text-align:left;
+		//@extend .h3;
 
 	}
 
@@ -172,12 +104,10 @@ $dreier : '.dreier';
 &__boxLinks{
 
 	float:left;
-	margin-bottom: 20px;
 
 
 &-block{	
 	float:left;
-	margin-bottom: 20px;
     }
 
 }
@@ -190,9 +120,8 @@ $dreier : '.dreier';
 
 &__boxMitte img{
 	
-	width:75%;
+	width: 100%;
 	float:left;
-	padding-bottom: 20px;
 
 	
 
@@ -203,16 +132,11 @@ $dreier : '.dreier';
 	float:left;
 
 
-	&-block{
-		
-		float:left;
-	 
+&-block{
+	
+	float:left;
+ 
     }
-
-    p{
-    text-align:left;
-    }
-
 }
 
 	}
@@ -226,45 +150,54 @@ $einer :'.einer' ;
 
 
 	img{
-     width: 75%;
+     width:100%;
 
 		}
 	}	
 
 }
-
-$footer : '.footer';
-
+$footer: '.footer';
 #{$footer}{
 
-  width: 100%;
-  background:#ccc;
-  margin: 0px auto;
-  font-size: 12px;
+	width: 100%;
+	background-color:#ccc;
+	font-size:22px;
+	border-top: 1px solid #999;
+	height: auto;
+
+		&__col1{
+			
+			background-color:#ccc;
+			
+			p{
+				font-size:7px;
+				padding-left: 10px;
+				}	
+		}
+
+		&__col2{
+			
+			background-color:#ccc;
+			
+			p{
+				font-size:7px;
+				padding-left:7px;
+				}
+		}
+		&__col3{
+			
+			background-color: #ccc;
+			p{
+				font-size:7px;
+				padding-left:7px;
+				}
+			
+		}
+	
 
 
-  &__col1{
-  	
-    paddin-buttom: 10px;
-  	
-	  	}
-  
-  &__col2{
-  
 
-	    p {
-	    	padding: 5px;
-	    }
-    
-    }
-  
-  &__col3{
-
-	    p {
-	    	padding: 5px;
-	    }
- }
-}
+	}
 
 
 

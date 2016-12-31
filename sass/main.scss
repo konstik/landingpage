@@ -5,19 +5,18 @@
 @import '_helper';
 @import '_mixin';
 //@import '_960up';
-//@import '_768up';
+
 
 
 
 @media only screen and (min-width: 960px){
 	@import '_960up'; 
 
-}
 
-
- @media only screen and (min-width: 768px){
-	@import '_768up'; 
 
 }
 
+ //@media only screen and (min-width: 768px){
+	//@import '_768up'; 
+//}
 
