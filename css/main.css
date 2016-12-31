@@ -16,16 +16,24 @@ h3 {
 .wrapper {
   margin: 0px; }
   .wrapper .header {
-    width: 94%;
+    width: 98%;
     background-color: #ccc;
-    position: fixed;
-    display: block;
-    margin-top: -100px; }
+    margin-top: -250px; }
+    .wrapper .header__container {
+      width: 98%;
+      position: fixed;
+      display: block;
+      margin-top: -200px;
+      background-color: #ccc; }
+      .wrapper .header__container__higtline {
+        padding: 10px; }
+      .wrapper .header__container__subline {
+        padding-bottom: 50px; }
 
 .zweier {
   width: 100%;
   display: block;
-  margin-top: 120px; }
+  margin-top: 400px; }
   .zweier__boxRechts {
     width: 45%; }
   .zweier__boxRechts-bild {

@@ -16,6 +16,7 @@ h2{
     	text-align:center;
 
 	}
+	
 h3 {
 		font-size:1.0em;
 	}
@@ -25,21 +26,30 @@ h3 {
 $wrapper : '.wrapper';
 #{$wrapper}{
 	margin: 0px;
-	//padding: 120px;
-
 
 
 
 $header : '.header';
 #{$header}{
-	width: 94%;
+	width: 98%;
 	background-color:#ccc;
+	margin-top:-250px;
+
+
+	&__container{
+	width:98%;
 	position:fixed;
-	display: block;
-	margin-top:-100px;
+	display:block;
+	margin-top:-200px;
+	background-color:#ccc;
+	
 
-
+		&__higtline{padding:10px;}
+		&__subline{padding-bottom:50px;}
 	}
+
+	}	
+	
 }
 
 	h1{
@@ -58,7 +68,7 @@ $zweier : '.zweier';
 #{$zweier}{
 	width:100%;
 	display:block;
-	margin-top: 120px;
+	margin-top: 400px;
 
 
 &__boxLinks{
