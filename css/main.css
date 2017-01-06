@@ -1,16 +1,16 @@
 .clear {
   clear: both; }
 
-h1 {
+.h1_base, h1 {
   font-size: 1.0rem;
   text-align: center; }
 
-h2 {
+.h2_base, h2 {
   font-size: 1.75rem;
   line-height: 1.688rem;
   text-align: center; }
 
-h3 {
+.h3_base, .dreier h3 {
   font-size: 1.0em; }
 
 .wrapper {
@@ -65,23 +65,16 @@ h3 {
   width: 100%;
   background-color: #ccc;
   font-size: 22px;
-  border-top: 1px solid #999;
   height: auto; }
+  .footer p {
+    font-size: 12px;
+    padding-left: 10px; }
   .footer__col1 {
     background-color: #ccc; }
-    .footer__col1 p {
-      font-size: 7px;
-      padding-left: 10px; }
   .footer__col2 {
     background-color: #ccc; }
-    .footer__col2 p {
-      font-size: 7px;
-      padding-left: 7px; }
   .footer__col3 {
     background-color: #ccc; }
-    .footer__col3 p {
-      font-size: 7px;
-      padding-left: 7px; }
 
 body {
   margin: margin 0px;
@@ -95,25 +88,25 @@ body {
     text-align: center; }
   .h2, h2 {
     font-size: 2.75rem;
-    line-height: 1.688rem;
+    line-height: 1.4rem;
     text-align: center; }
   .h3, .dreier h3 {
-    font-size: 1.0em;
+    font-size: 2.0em;
     color: #00f; }
-  .p, .footer__col1 p, .footer__col2 p, .footer__col3 p {
-    font-size: 18px;
+  .p, .dreier p, .footer__col1 p, .footer__col2 p, .footer__col3 p {
+    font-size: 21px;
     padding-left: 10px; }
   .wrapper {
     margin: 0px auto; }
     .wrapper .header {
       width: 98%;
       background-color: #ccc;
-      margin-top: -250px; }
+      margin-top: -320px; }
       .wrapper .header__container {
         width: 98%;
         position: fixed;
         display: block;
-        margin-top: -120px;
+        margin-top: -180px;
         background-color: #ccc; }
         .wrapper .header__container__higtline {
           padding: 10px; }
@@ -128,8 +121,7 @@ body {
       width: 50%; }
     .zweier__boxRechts {
       float: right;
-      width: 45%;
-      margin-top: -150px; }
+      width: 45%; }
     .zweier__boxRechts-bild {
       float: right;
       width: 100%; }
@@ -137,7 +129,104 @@ body {
       float: left;
       width: 100%;
       margin-left: 300px;
-      display: block; }
+      display: block;
+      margin-top: -50px; }
+  .dreier {
+    width: 100%;
+    display: block; }
+    .dreier__boxLinks {
+      margin-top: 20px;
+      width: 30%;
+      float: left; }
+      .dreier__boxLinks-block {
+        padding-bottom: 100px; }
+      .dreier__boxLinks p {
+        text-align: right; }
+    .dreier__boxMitte {
+      margin-top: 20px;
+      float: left;
+      width: 30%; }
+    .dreier__boxMitte img {
+      width: 100%;
+      float: left;
+      padding-left: 50px; }
+    .dreier__boxRechts {
+      margin-top: 20px;
+      width: 30%;
+      float: right; }
+      .dreier__boxRechts-block {
+        padding-bottom: 100px; }
+  .einer {
+    padding-top: 20px; }
+    .einer__bild img {
+      width: 100%; }
+  .footer {
+    width: 100%;
+    font-size: 12px;
+    height: auto;
+    background-color: #ccc; }
+    .footer__col1 {
+      width: 33%;
+      float: left;
+      font-size: 12px; }
+    .footer__col2 {
+      float: left;
+      width: 33%; }
+    .footer__col3 {
+      float: left;
+      width: 33%; } }
+
+@media only screen and (min-width: 768px) {
+  .clear {
+    clear: both; }
+  .h1_mild, h1 {
+    font-size: 3.0rem;
+    text-align: center; }
+  .h2_mild, h2 {
+    font-size: 2.75rem;
+    line-height: 1.688rem;
+    text-align: center; }
+  .h3_mild, .dreier h3 {
+    font-size: 2.0em;
+    color: #00f; }
+  .p_mild, .dreier p, .footer p {
+    font-size: 21px;
+    padding-left: 10px; }
+  .wrapper {
+    margin: 0px auto; }
+    .wrapper .header {
+      width: 98%;
+      background-color: #ccc;
+      margin-top: -320px; }
+      .wrapper .header__container {
+        width: 98%;
+        position: fixed;
+        display: block;
+        margin-top: -180px;
+        background-color: #ccc; }
+        .wrapper .header__container__higtline {
+          padding: 10px; }
+        .wrapper .header__container__subline {
+          padding-bottom: 50px; }
+  .zweier {
+    width: 100%;
+    display: block;
+    margin-top: 400px; }
+    .zweier__boxLinks {
+      float: left;
+      width: 50%; }
+    .zweier__boxRechts {
+      float: right;
+      width: 45%; }
+    .zweier__boxRechts-bild {
+      float: right;
+      width: 100%; }
+    .zweier__boxRechts-bild img {
+      float: left;
+      width: 100%;
+      margin-left: 300px;
+      display: block;
+      margin-top: -210px; }
   .dreier {
     width: 100%;
     display: block; }
@@ -171,7 +260,6 @@ body {
     width: 100%;
     background-color: #ccc;
     font-size: 12px;
-    border: 1px solid #999;
     height: auto; }
     .footer__col1 {
       width: 33%;

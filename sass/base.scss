@@ -5,19 +5,19 @@ $clear :'.clear';
 	clear:both;
 }
 
-h1{
+.h1_base{
 		 font-size:1.0rem;
 		 text-align:center;	
 }
 
-h2{
+.h2_base{
    		font-size: 1.75rem;
     	line-height: 1.688rem;
     	text-align:center;
 
 	}
 	
-h3 {
+.h3_base {
 		font-size:1.0em;
 	}
 
@@ -53,11 +53,11 @@ $header : '.header';
 }
 
 	h1{
-		 //@extend.h1;	
+		 @extend.h1_base;	
 	}
 
 	h2{
-   		//@extend.h2;
+   		@extend.h2_base;
 
 	}
 
@@ -106,7 +106,7 @@ $dreier : '.dreier';
 
 
 	h3{
-		//@extend .h3;
+		@extend .h3_base;
 
 	}
 
@@ -166,41 +166,41 @@ $einer :'.einer' ;
 	}	
 
 }
+
+
 $footer: '.footer';
 #{$footer}{
 
 	width: 100%;
 	background-color:#ccc;
 	font-size:22px;
-	border-top: 1px solid #999;
 	height: auto;
+
+
+
+	p{
+		font-size:12px;
+		padding-left: 10px;
+		}
+
 
 		&__col1{
 			
 			background-color:#ccc;
 			
-			p{
-				font-size:7px;
-				padding-left: 10px;
-				}	
+				
 		}
 
 		&__col2{
 			
 			background-color:#ccc;
 			
-			p{
-				font-size:7px;
-				padding-left:7px;
-				}
 		}
+
 		&__col3{
 			
 			background-color: #ccc;
-			p{
-				font-size:7px;
-				padding-left:7px;
-				}
+			
 			
 		}
 	

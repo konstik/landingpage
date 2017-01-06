@@ -15,20 +15,20 @@ $clear :'.clear';
 
 .h2{
    		font-size: 2.75rem;
-    	line-height: 1.688rem;
+    	line-height: 1.4rem;
     	text-align:center;
 
 	}
 
 .h3{
-		font-size:1.0em;
+		font-size:2.0em;
         color:#00f;
        
 	}	
 
 
 .p{
-	font-size:18px;
+	font-size:21px;
 	padding-left:10px;
 }
 
@@ -44,14 +44,14 @@ $header : '.header';
 #{$header}{
 	width: 98%;
 	background-color:#ccc;
-	margin-top:-250px;
+	margin-top:-320px;
 
 
 	&__container{
 	width:98%;
 	position:fixed;
 	display:block;
-	margin-top:-120px;
+	margin-top:-180px;
 	background-color:#ccc;
 	
 
@@ -60,28 +60,19 @@ $header : '.header';
 	}
 
 	}
-
-
-
-
-	
 	
 }
 
 	h1{
-		 //font-size:4.0 rem;	
-		  //text-align:center;
+	
 		  @extend.h1;
-		  
 		 
-  
-
 	}
 
 	h2{
-   		//font-size: 3.75rem;
-    	//line-height: 4.688rem;
+   		
     	@extend.h2;
+
 	}
 
 
@@ -107,7 +98,7 @@ $zweier : '.zweier';
 
 	float:right;
 	width:45%;
-    margin-top:-150px;
+    
     
 }
 
@@ -123,29 +114,34 @@ $zweier : '.zweier';
    width:100%;
    margin-left:300px;
    display:block;
+   margin-top:-50px;
  }
 
 
 
 }
 
-// dreier divs zweiter container
+// dreier divs 
 
 $dreier : '.dreier';
 
 #{$dreier}{
 	
-	//padding-top:80px;
+	
 	width:100%;
 	display:block;
 
 
 	h3{
-		//font-size:1.0em;
-        //color:#00f;
+		
         @extend .h3;
 	}
 
+   p{
+   		@extend .p;
+
+
+   }
 
 &__boxLinks{
 	margin-top:20px;
@@ -159,7 +155,7 @@ $dreier : '.dreier';
     }
 
 
-p  {
+	p {
 	
 	text-align:right;
 
@@ -197,7 +193,6 @@ p  {
 	
 	padding-bottom:100px;
 	
- 
 }
 
 }
@@ -209,34 +204,31 @@ p  {
 $einer :'.einer' ;
 #{$einer}{
 
-//width:100%;
+	padding-top:20px;
 
-padding-top:20px;
-
-&__bild{
+	&__bild{
 
 
-	img{
-     width:100%;
+		img{
+	     width:100%;
 
-		}
-	}	
+			}
+		}	
 
-}
+	}
 
 $footer: '.footer';
 #{$footer}{
 
 	width: 100%;
-	background-color:#ccc;
 	font-size: 12px;
-	border: 1px solid #999;
 	height: auto;
+	background-color:#ccc;
 
 		&__col1{
 			width:33%;
 			float:left;
-			background-color:#ccc;
+			//background-color:#ccc;
 			font-size:12px;
 
 			p{
@@ -244,10 +236,11 @@ $footer: '.footer';
 			}
 			
 		}
+
 		&__col2{
 			float:left;
 			width:33%;
-			background-color:#ccc;
+			//background-color:#ccc;
 
 			p{
 				
@@ -259,7 +252,7 @@ $footer: '.footer';
 		&__col3{
 			float:left;
 			width: 33%;
-			background-color: #ccc;
+			//background-color: #ccc;
 			
 			p{
 				

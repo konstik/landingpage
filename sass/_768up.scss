@@ -1,47 +1,42 @@
 
+
+
+
+
 $clear :'.clear';
 #{$clear}{
 	
 	clear:both;
 }
 
-$header :'.header';
-#{$header}{
-width: 100%;
-height: auto;
-position:fixed;
-background-color:#ccc;
-max-width:750px;
-margin-left:-155px;
 
-		&__higtline{
-		width: 100%;
-		
+.h1_mild{
 
+		 font-size:3.0rem;
+		 text-align:center;	
+}
 
-			 h2{
-          text-align:center;
-          //@include headline;
-        		}
+.h2_mild{
 
+   		font-size: 2.75rem;
+    	line-height: 1.688rem;
+    	text-align:center;
 
 	}
 
-		        h1{
-		     	text-align:center;
-		          //@include headline;
-		     	}
+.h3_mild{
+
+		font-size:2.0em;
+        color:#00f;
+       
+	}	
 
 
-				&__subline{
-				width: 100%;
-				
-		        
-		        
-			}
+.p_mild{
 
+	font-size:21px;
+	padding-left:10px;
 }
-
 
 
 
@@ -49,28 +44,64 @@ margin-left:-155px;
 $wrapper : '.wrapper';
 #{$wrapper}{
 
-	margin:0px;
-	padding:20px;
+	margin:0px auto;
 	
-	h1 {
+$header : '.header';
+#{$header}{
 
-		//margin-top: 120px;
+	width: 98%;
+	background-color:#ccc;
+	margin-top:-320px;
+
+
+	&__container{
+
+	width:98%;
+	position:fixed;
+	display:block;
+	margin-top:-180px;
+	background-color:#ccc;
+	
+
+		&__higtline{padding:10px;}
+		&__subline{padding-bottom:50px;}
+	}
 
 	}
+
+
+
+
+	
+	
 }
+
+	h1{
+		 
+		  @extend.h1_mild;
+		  
+	}
+
+	h2{
+   		
+    	@extend.h2_mild;
+	}
+
 
 
 // zweier divs erste container
 
 $zweier : '.zweier';
 #{$zweier}{
+
 	width:100%;
-	padding-bottom:20px;
 	display:block;
-	padding-top:220px;
+	margin-top:400px;
+
 
 
 &__boxLinks{
+
 	float:left;
 	width: 50%;
 
@@ -81,10 +112,12 @@ $zweier : '.zweier';
 
 	float:right;
 	width:45%;
-    //margin-top:-380px;
+    
+    
 }
 
 &__boxRechts-bild{
+
     float:right;
 	width:100%;
 
@@ -92,26 +125,39 @@ $zweier : '.zweier';
 }
 
  &__boxRechts-bild img{
-  float:left;
+
+   float:left;
    width:100%;
-   margin-left:0px;
+   margin-left:300px;
    display:block;
+   margin-top:-210px;
  }
+
+
 
 }
 
-// dreier divs zweiter container
+// dreier divs 
 
 $dreier : '.dreier';
 
 #{$dreier}{
 	
-	padding-top:20px;
+	
 	width:100%;
 	display:block;
 
 
+	h3{
+		
+        @extend .h3_mild;
+	}
 
+   p{
+   		@extend .p_mild;
+
+
+   }
 
 &__boxLinks{
 	margin-top:20px;
@@ -124,6 +170,14 @@ $dreier : '.dreier';
 	
     }
 
+
+	p {
+	
+	text-align:right;
+
+  }
+
+  
 }
 
 
@@ -140,7 +194,7 @@ $dreier : '.dreier';
 	
 	width: 100%;
 	float:left;
-	//padding-left:50px;
+	padding-left:50px;
 	
 
 }
@@ -160,22 +214,73 @@ $dreier : '.dreier';
 
 }
 
+
+
 	}
 
 $einer :'.einer' ;
 #{$einer}{
-padding-top:20px;
 
-&__bild{
+	padding-top:20px;
+
+	&__bild{
 
 
-	img{
-     width:100%;
+		img{
+	     width:100%;
+
+			}
+		}	
+
+	}
+
+$footer: '.footer';
+#{$footer}{
+
+	width: 100%;
+	background-color:#ccc;
+	font-size: 12px;
+	height: auto;
+
+
+		&__col1{
+			width:33%;
+			float:left;
+			background-color:#ccc;
+			font-size:12px;
+
+			
+			
+		}
+		&__col2{
+			float:left;
+			width:33%;
+			background-color:#ccc;
+
+			
+			
+		}
+
+		&__col3{
+			float:left;
+			width: 33%;
+			background-color: #ccc;
+			
+			
 
 		}
-	}	
+		
+		p{
+				@extend .p_mild;
+			}
+	}
 
-}
+
+
+ 
+
+
+
 
 
  
